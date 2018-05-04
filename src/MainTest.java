@@ -14,8 +14,6 @@ public class MainTest {
 		char scelta;
 		do {
 		Data data =new Data();
-		Sys
-		System.out.println(data);
 		System.out.println("Inserisci il numero di cluster volute:  ");
 		k=Keyboard.readInt();
 		KMeansMiner kmeans = null;
@@ -25,8 +23,7 @@ public class MainTest {
 			numIter = kmeans.kmeans(data);
 		} catch (OutOfRangeSampleSize e) {
 		
-			System.out.println("Errore catturata eccezione ");
-			e.printStackTrace();
+			System.out.println("Il numero di cluster è troppo elevato!!!!! Prova con un numero più basso");
 		}
 		
 		System.out.println("Numero di Iterazione:"+numIter);

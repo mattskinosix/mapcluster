@@ -1,4 +1,7 @@
 package data;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 import utility.ArraySet;
 public class Data {
@@ -72,6 +75,28 @@ public class Data {
 		
 		
 	}
+	//frindly
+	class Example implements Comparable<Example>{
+		private List<Object> example= new ArrayList<Object>();
+
+		public void add(Object a) {
+		example.add(a);
+		}
+	
+		public Object get(int i) {
+			return example.get(i);
+		}
+		public int compareTo(Example ex) {
+			
+			for	(Iterator<Object> e= example.iterator(); e.hasNext(); ) {
+				if)
+			}
+			return 0;
+			
+			
+		}
+		
+	}	
 	
 	public int getNumberOfExamples(){
 		return numberOfExamples;

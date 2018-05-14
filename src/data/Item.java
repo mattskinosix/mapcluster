@@ -1,5 +1,7 @@
 package data;
-import utility.ArraySet;
+
+import java.util.HashSet;
+
 public abstract class Item {
 		private Attribute attribute;
 		Object value;
@@ -21,7 +23,7 @@ public abstract class Item {
 		}
 		public abstract double distance(Object a);
 		
-		public void update (Data data,ArraySet clusteredData) {
+		public void update (Data data,HashSet clusteredData) {
 			value=data.computePrototype(clusteredData,attribute);
 			
 		}

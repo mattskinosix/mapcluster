@@ -27,13 +27,13 @@ public class Tuple {
 		
 	}
 	
-	public double avgDistance(Data data, int clusteredData[]){
+	public double avgDistance(Data data, Integer[] array){
 		double p=0.0,sumD=0.0;
-		for(int i=0;i<clusteredData.length;i++){
-			double d= getDistance(data.getItemSet(clusteredData[i]));
+		for(int i=0;i<array.length;i++){
+			double d= getDistance(data.getItemSet(array[i]));
 			sumD+=d;
 			}
-		p=sumD/clusteredData.length;
+		p=sumD/array.length;
 		return p;  
 	} 
 	

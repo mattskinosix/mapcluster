@@ -1,7 +1,8 @@
 package data;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
-import utility.ArraySet;
+
 class DiscreteAttribute extends Attribute implements Iterable<String> {
     private TreeSet<String> values;
 
@@ -24,11 +25,11 @@ class DiscreteAttribute extends Attribute implements Iterable<String> {
         return values.;
     }
     */
-    public int frequency (Data data, ArraySet idList, String v) {
+    public int frequency (Data data, HashSet<Boolean> idList, String v) {
     	int i=0,j=0;
     	int freq=0;
-    	while (i<data.getNumberOfExamples()) {
-    		if(idList.get(i)) while (j<data.getNumberOfAttributes()) {
+    	for (Boolean elem: idList) {
+    		if(elem.booleanValue()) while (j<data.getNumberOfAttributes()) {
     			if(v.equals(data.getAttributeValue(i,j))) freq++;
     			j++;
     		}

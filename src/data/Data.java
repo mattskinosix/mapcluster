@@ -83,6 +83,7 @@ public class Data {
 		playtennis.add("No");
 		attributeSet.add(new DiscreteAttribute("Playtennis", 4, playtennis));
 
+		
 		TreeSet<Example> tempdata = new TreeSet<Example>();
 		Example ex0 = new Example();
 		Example ex1 = new Example();

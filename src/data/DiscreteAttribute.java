@@ -24,6 +24,7 @@ class DiscreteAttribute extends Attribute implements Iterable<String> {
     public String getValues(int i){
         return values.;
     }
+    
     */
     public int frequency (Data data, HashSet<Integer> idList, String v) {
     	int i=0,j=0;

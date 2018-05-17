@@ -6,14 +6,14 @@ import data.*;
 public class Cluster {
 	private Tuple centroid;
 
-		Set<Integer> clusteredData;	
+		Set<Integer> clusteredData=new HashSet<Integer>();;	
 	/*Cluster(){
 		
 	}*/
 
 	Cluster(Tuple centroid){
 		this.centroid=centroid;
-		clusteredData=new HashSet<Integer>();
+
 		
 	}
 		
@@ -60,17 +60,17 @@ public class Cluster {
 	public String toString(Data data){
 		String str="Centroid=(";
 		for(int i=0;i<centroid.getLength();i++)
-			str+=centroid.get(i)+ " ";
+			str+=centroid.get(i) + " ";
 		str+=")\nExamples:\n";
-		Integer array[]=(Integer[])clusteredData.toArray();
+		Object array[]=clusteredData.toArray();
 		for(int i=0;i<array.length;i++){
 			str+="[";
 			for(int j=0;j<data.getNumberOfAttributes();j++)
-				str+=data.getAttributeValue(array[i], j)+" ";
-			str+="] dist="+getCentroid().getDistance(data.getItemSet(array[i]))+"\n";
+				str+=data.getAttributeValue((Integer)array[i], j)+" ";
+			str+="] dist="+getCentroid().getDistance(data.getItemSet((Integer)array[i]))+"\n";
 			
 		}
-		str+="\nAvgDistance="+getCentroid().avgDistance(data, array);
+		str+="\nAvgDistance="+getCentroid().avgDistance(data,array);
 		return str;
 		
 	}

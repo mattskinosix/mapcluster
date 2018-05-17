@@ -25,19 +25,20 @@ class DiscreteAttribute extends Attribute implements Iterable<String> {
         return values.;
     }
     */
-    public int frequency (Data data, HashSet<Boolean> idList, String v) {
+    public int frequency (Data data, HashSet<Integer> idList, String v) {
     	int i=0,j=0;
     	int freq=0;
-    	for (Boolean elem: idList) {
-    		if(elem.booleanValue()) while (j<data.getNumberOfAttributes()) {
+    	for (i=0;i<idList.size();i++) {
+    		System.out.println("capochia mirko");
+    		if(idList.contains(i)) while (j<data.getNumberOfAttributes()) {
     			if(v.equals(data.getAttributeValue(i,j))) freq++;
     			j++;
     		}
-    	i++;
+    		i++;
     	}
     	return freq; 
     }
-    
+ 
     
 }
 

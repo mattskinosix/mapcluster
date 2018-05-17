@@ -27,10 +27,10 @@ public class Tuple {
 		
 	}
 	
-	public double avgDistance(Data data, Integer[] array){
+	public double avgDistance(Data data, Object[] array){
 		double p=0.0,sumD=0.0;
 		for(int i=0;i<array.length;i++){
-			double d= getDistance(data.getItemSet(array[i]));
+			double d= getDistance(data.getItemSet((Integer)array[i]));
 			sumD+=d;
 			}
 		p=sumD/array.length;

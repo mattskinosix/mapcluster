@@ -16,7 +16,9 @@ public class KMeansMiner {
 	public int kmeans(Data data) throws OutOfRangeSampleSize{
 		int numberOfIterations=0;
 		//STEP 1
+		System.out.println("prima di inizializzare");
 		C.initializeCentroids(data);
+		System.out.println("matteo");
 		boolean changedCluster=false;
 		do{
 			numberOfIterations++;
@@ -26,8 +28,7 @@ public class KMeansMiner {
 				Cluster nearestCluster = C.nearestCluster(data.getItemSet(i));
 				Cluster oldCluster=C.currentCluster(i);
 				boolean currentChange=nearestCluster.addData(i);
-				if(currentChange)
-					changedCluster=true;
+				if(currentChange) changedCluster=true;
 				//rimuovo la tupla dal vecchio cluster
 				if(currentChange && oldCluster!=null)
 					//il nodo va rimosso dal suo vecchio cluster

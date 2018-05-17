@@ -38,6 +38,7 @@ public class ClusterSet {
 		int centroidIndexes[] = null;
 		centroidIndexes = data.sampling(C.length);
 		for(int i=0;i<centroidIndexes.length;i++)   {
+			System.out.println(centroidIndexes[i]);
 		  Tuple centroidI=data.getItemSet(centroidIndexes[i]);
 		  add(new Cluster(centroidI));
 		  }

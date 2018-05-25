@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Attribute	Attribute.java	/^public Attribute(String name, int index){$/;"	m	class:Attribute	access:public	signature:(String name, int index)
+Attribute	Attribute.java	/^public abstract class  Attribute{$/;"	c
+Attribute.Attribute	Attribute.java	/^public Attribute(String name, int index){$/;"	m	class:Attribute	access:public	signature:(String name, int index)
+Attribute.getIndex	Attribute.java	/^public int getIndex(){$/;"	m	class:Attribute	access:public	signature:()
+Attribute.getName	Attribute.java	/^public String getName(){$/;"	m	class:Attribute	access:public	signature:()
+Attribute.index	Attribute.java	/^    private int index;$/;"	f	class:Attribute	file:	access:private
+Attribute.name	Attribute.java	/^    private String name;$/;"	f	class:Attribute	file:	access:private
+Attribute.toString	Attribute.java	/^public String toString(){$/;"	m	class:Attribute	access:public	signature:()
+ContinuosAttribute	ContinuousAttribute.java	/^    public ContinuosAttribute(String name, int index, double min, double max){$/;"	m	class:ContinuosAttribute	access:public	signature:(String name, int index, double min, double max)
+ContinuosAttribute	ContinuousAttribute.java	/^class ContinuosAttribute extends Attribute {$/;"	c	inherits:Attribute
+ContinuosAttribute.ContinuosAttribute	ContinuousAttribute.java	/^    public ContinuosAttribute(String name, int index, double min, double max){$/;"	m	class:ContinuosAttribute	access:public	signature:(String name, int index, double min, double max)
+ContinuosAttribute.getScaledValue	ContinuousAttribute.java	/^    public double getScaledValue(double v){$/;"	m	class:ContinuosAttribute	access:public	signature:(double v)
+ContinuosAttribute.max	ContinuousAttribute.java	/^    private double max;$/;"	f	class:ContinuosAttribute	file:	access:private
+ContinuosAttribute.min	ContinuousAttribute.java	/^    private double min;$/;"	f	class:ContinuosAttribute	file:	access:private
+DiscreteAttribute	DisceteAttribute.java	/^    DiscreteAttribute(String name, int index , String values[]){$/;"	m	class:DiscreteAttribute	access:default	signature:(String name, int index , String values[])
+DiscreteAttribute	DisceteAttribute.java	/^class DiscreteAttribute extends Attribute {$/;"	c	inherits:Attribute
+DiscreteAttribute.DiscreteAttribute	DisceteAttribute.java	/^    DiscreteAttribute(String name, int index , String values[]){$/;"	m	class:DiscreteAttribute	access:default	signature:(String name, int index , String values[])
+DiscreteAttribute.value	DisceteAttribute.java	/^    private String value[];$/;"	f	class:DiscreteAttribute	file:	access:private
+getIndex	Attribute.java	/^public int getIndex(){$/;"	m	class:Attribute	access:public	signature:()
+getName	Attribute.java	/^public String getName(){$/;"	m	class:Attribute	access:public	signature:()
+getScaledValue	ContinuousAttribute.java	/^    public double getScaledValue(double v){$/;"	m	class:ContinuosAttribute	access:public	signature:(double v)
+index	Attribute.java	/^    private int index;$/;"	f	class:Attribute	file:	access:private
+max	ContinuousAttribute.java	/^    private double max;$/;"	f	class:ContinuosAttribute	file:	access:private
+min	ContinuousAttribute.java	/^    private double min;$/;"	f	class:ContinuosAttribute	file:	access:private
+name	Attribute.java	/^    private String name;$/;"	f	class:Attribute	file:	access:private
+toString	Attribute.java	/^public String toString(){$/;"	m	class:Attribute	access:public	signature:()
+value	DisceteAttribute.java	/^    private String value[];$/;"	f	class:DiscreteAttribute	file:	access:private

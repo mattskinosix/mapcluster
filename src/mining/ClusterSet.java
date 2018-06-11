@@ -1,12 +1,9 @@
 package mining;
 //import java.lang.reflect.Array;
 
-import java.io.Serializable;
-
 import data.*;
 
-@SuppressWarnings("serial")
-public class ClusterSet implements Serializable{
+public class ClusterSet {
 	private static final Cluster NULL = null;
 	Cluster [] C;
 	int i =0;

@@ -1,11 +1,9 @@
 package mining;
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 import data.*;
-@SuppressWarnings("serial")
-public class Cluster implements Serializable {
+public class Cluster {
 	private Tuple centroid;
 
 	private Set<Integer> clusteredData; 
@@ -48,7 +46,6 @@ public class Cluster implements Serializable {
 	}
 	
 	public String toString(){
-		System.out.println("aaa");
 		String str="Centroid=(";
 		for(int i=0;i<centroid.getLength();i++)
 			str+=centroid.get(i);

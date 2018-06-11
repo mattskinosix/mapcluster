@@ -1,29 +1,28 @@
 package data;
-public abstract class  Attribute{
-    private String name;
-    private int index;
-    
 
-public Attribute(String name, int index){
+import java.io.Serializable;
 
-    this.name=name;
-    this.index=index;
- }
+@SuppressWarnings("serial")
+public abstract class Attribute implements Serializable{
+	private String name;
+	private int index;
 
+	public Attribute(String name, int index) {
 
-public String getName(){
-    return name;
-}
+		this.name = name;
+		this.index = index;
+	}
 
-public int getIndex(){
-    return index;
-}
+	public String getName() {
+		return name;
+	}
 
-public String toString(){
-    return name;
-}
+	public int getIndex() {
+		return index;
+	}
 
-
-
+	public String toString() {
+		return name;
+	}
 
 }
